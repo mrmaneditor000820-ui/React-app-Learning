@@ -1,7 +1,7 @@
 
 
 
-function Input() {
+ export function Input() {
     return (
         <div>
             <input type='text' placeholder='enter your name'></input>
@@ -9,4 +9,4 @@ function Input() {
     )
 }
 
-export default Input
+
