@@ -1,6 +1,6 @@
 
-import Buttons1 from './components/Buttons.js'
-import { Input } from './components/Input.js'
+import Buttons1 from './components/Buttons.jsx'
+import { Input } from './components/Input.jsx'
 import './button.css'
 
 function App() {
