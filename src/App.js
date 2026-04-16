@@ -1,6 +1,7 @@
 
 import Buttons1 from './components/Buttons.js'
 import { Input } from './components/Input.js'
+import './button.css'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <div>
       <h1 style={{ color: "red" }}>hello kiya hal hy </h1>
       <h1 style={mystyle}>hello kiya hal hy </h1>
+      <h1 className='heading1'>hello kiya hal hy </h1>
       <Buttons1 />
       <Buttons1 />
       <Input />
