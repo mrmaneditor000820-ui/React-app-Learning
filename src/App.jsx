@@ -1,6 +1,6 @@
 
 import Buttons1 from './components/Buttons.jsx'
-import { Input } from './components/Input.jsx'
+// import { Input } from './components/Input.jsx'
 import './button.css'
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
       <Buttons1 />
       <Buttons1 />
       <Buttons1 />
-      <Input />
-      <Input />
+      {/* <Input />
+      <Input /> */}
 
     </div>
   )
