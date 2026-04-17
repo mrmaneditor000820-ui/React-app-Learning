@@ -17,6 +17,7 @@ function App() {
       <h1 className='heading1'>hello kiya hal hy </h1>
       <Buttons1 />
       <Buttons1 />
+      <Buttons1 />
       <Input />
       <Input />
 
