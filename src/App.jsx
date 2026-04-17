@@ -10,6 +10,7 @@ function App() {
     backgroundColor:"yellow"
   }
 
+  
   return (
     <div>
       <h1 style={{ color: "red" }}>hello kiya hal hy </h1>
