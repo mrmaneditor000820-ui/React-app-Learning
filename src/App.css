@@ -23,11 +23,15 @@ li a{
 }
 li i{
   color: rgb(4, 26, 165);
+  
 }
 .signupbtn{
   padding: 10px 25px;
   border-radius: 10px;
   border: 2px solid rgb(3, 68, 247);
   background: rgb(3, 88, 145);
-  color: rgb(255, 255, 255);
+}
+.signupbtn a{
+  text-decoration: none;
+  color: white;
 }
