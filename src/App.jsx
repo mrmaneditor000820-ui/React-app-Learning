@@ -16,7 +16,7 @@ function App() {
       <h1 style={{ color: "red" }}>hello kiya hal hy </h1>
       <h1 style={mystyle}>hello kiya hal hy </h1>
       <h1 className='heading1'>hello kiya hal hy </h1>
-      <Buttons1 />
+      <Buttons1 title="me hon "/>
       <Buttons1 />
       <Buttons1 />
       {/* <Input />
