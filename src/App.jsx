@@ -2,26 +2,13 @@
 import Buttons1 from './components/Buttons.jsx'
 // import { Input } from './components/Input.jsx'
 import './button.css'
+import Navbar from './components/Navbar.jsx'
 
 function App() {
 
-  const mystyle = {
-    color:"blue",
-    backgroundColor:"yellow"
-  }
-
-  
   return (
     <div>
-      <h1 style={{ color: "red" }}>hello kiya hal hy </h1>
-      <h1 style={mystyle}>hello kiya hal hy </h1>
-      <h1 className='heading1'>hello kiya hal hy </h1>
-      <Buttons1 title="me hon "/>
-      <Buttons1 />
-      <Buttons1 />
-      {/* <Input />
-      <Input /> */}
-
+  <Navbar/>
     </div>
   )
 }

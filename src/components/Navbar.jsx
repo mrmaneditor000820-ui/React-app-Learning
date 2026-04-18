@@ -1,10 +1,11 @@
 
-import React from 'react'
+
 
 function Navbar() {
     return (
-        <div>
-            
+        <div className="main">
+           <h2>ABDUL REHMAN</h2> 
+
         </div>
     )
 }
