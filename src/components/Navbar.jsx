@@ -22,7 +22,7 @@ export default Navbar
 
 
 
-function Navbar() {
+export function Navbar1() {
     return (
         <div>
            <h1>hero is here</h1> 
@@ -30,7 +30,7 @@ function Navbar() {
     )
 }
 
-export default Navbar
+
 
 
 
