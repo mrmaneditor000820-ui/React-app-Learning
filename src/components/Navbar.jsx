@@ -22,6 +22,19 @@ export default Navbar
 
 
 
+function Navbar() {
+    return (
+        <div>
+           <h1>hero is here</h1> 
+        </div>
+    )
+}
+
+export default Navbar
+
+
+
+
 
 
 
