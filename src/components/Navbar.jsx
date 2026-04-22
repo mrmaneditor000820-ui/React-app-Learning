@@ -27,9 +27,9 @@ export function Navbar1() {
         <div>
            <h1>hero is here</h1> 
         </div>
-    )
-}
 
+)
+}
 
 
 
