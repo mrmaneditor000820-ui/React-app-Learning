@@ -17,3 +17,5 @@ const products = [{
     Discription: "This is my shoes",
     img: <img src="" alt="" />
 }]
+
+export default products;
