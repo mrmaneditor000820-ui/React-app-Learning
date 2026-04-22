@@ -14,7 +14,11 @@ function App() {
 
   {
     products.map((products)=>{
-      return console.log(products)
+      return (
+        <div>
+          <h1>{products.title}</h1>
+        </div>
+      )
     })
   }
     </div>
