@@ -22,14 +22,6 @@ export default Navbar
 
 
 
-export function Navbar1() {
-    return (
-        <div>
-           <h1>hero is here</h1> 
-        </div>
-
-)
-}
 
 
 
