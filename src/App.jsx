@@ -17,6 +17,7 @@ function App() {
       return (
         <div>
           <h1>{products.title}</h1>
+          <h1>{products.title}</h1>
         </div>
       )
     })
