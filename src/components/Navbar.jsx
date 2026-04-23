@@ -8,10 +8,10 @@ function Navbar() {
             <h2>ABDUL REHMAN</h2>
             <nav >
                 <ul className='navlinks'>
-                    <li><a href=""> <i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href=""><i class="fa-solid fa-circle-user"></i>About</a></li>
-                    <li><a href=""><i class="fa-solid fa-briefcase"></i>My Work</a></li>
-                    <li><a href=""><i class="fa-jelly-fill fa-regular fa-address-card"></i>Contact</a></li>
+                    <li><a href=""><span id='kuchbhi'><i class="fa-solid fa-house"></i></span><br></br>Home</a></li>
+                    <li><a href=""><span><i class="fa-solid fa-circle-user"></i></span><br></br>About</a></li>
+                    <li><a href=""><span><i class="fa-solid fa-briefcase"></i></span><br></br>My Work</a></li>
+                    <li><a href=""><span><i class="fa-jelly-fill fa-regular fa-address-card"></i></span><br></br>Contact</a></li>
                 </ul>
             </nav>
             <button className='signupbtn'><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign Up</a></button>
