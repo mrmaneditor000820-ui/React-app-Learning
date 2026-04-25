@@ -92,13 +92,16 @@ function App() {
         products.map((product) => {
           return (
             <div>
-              <Productcard key={product.id} title={product.title} discription={product.Discription} price={product.Price} image={product.image} />
+              <Productcard 
+              key={product.id}
+               title={product.title} 
+               discription={product.Discription}
+                price={product.Price} 
+                image={product.image} />
             </div>
           )
         })
       }
-
-      <Productcard title="shoes" discription="sdvhj" />
     </div>
   )
 }
