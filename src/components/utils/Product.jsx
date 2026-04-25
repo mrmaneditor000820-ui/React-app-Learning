@@ -20,7 +20,7 @@ const products = [{
     title: "SHOES3",
     Price: "200",
     Discription: "This is my shoes",
-    image: ""
+    image: shoes1
 }]
 
 export default products;
