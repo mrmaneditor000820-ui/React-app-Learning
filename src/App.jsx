@@ -18,6 +18,8 @@ function App() {
         <div>
           <h1>{products.title}</h1>
           <h1>{products.Discription}</h1>
+          <h1>{products.Price}</h1>
+          <img src={products.image} alt={products.title} />
         </div>
       )
     })
