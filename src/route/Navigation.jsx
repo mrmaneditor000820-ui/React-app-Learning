@@ -5,6 +5,7 @@ import Home from "../pages/Home"
 import About from "../pages/About"
 import Navbar from '../components/Navbar'
 import Mywork from '../pages/Mywork'
+import Contact from '../pages/Contact'
 
 function Navigation() {
     return (
@@ -14,6 +15,7 @@ function Navigation() {
         <Route path='/' element={<Home/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Mywork' element={<Mywork/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
       </Routes>
       </BrowserRouter> 
     )
