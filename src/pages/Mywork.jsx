@@ -49,8 +49,6 @@ function Mywork() {
 
                         <a 
                             href={project.link} 
-                            target="_blank" 
-                            rel="noreferrer"
                             style={styles.button}
                         >
                             View Project
