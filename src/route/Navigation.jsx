@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar'
 function Navigation() {
     return (
       <BrowserRouter>
-      <Navbar/>
+      <Navbar/>     
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/About' element={<About/>}/>
