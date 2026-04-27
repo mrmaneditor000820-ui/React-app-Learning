@@ -1,4 +1,6 @@
 import React from 'react'
+import shoes1 from "../components/shoes1.jpeg";
+
 
 function Mywork() {
 
@@ -7,21 +9,21 @@ function Mywork() {
             id: 1,
             title: "AI Chat App",
             desc: "AI based chat application built with React & API integration.",
-            image: "https://via.placeholder.com/300",
+            image: shoes1,
             link: "https://your-project-link.com"
         },
         {
             id: 2,
             title: "E-commerce Website",
             desc: "Modern online store with cart and payment UI.",
-            image: "https://via.placeholder.com/300",
+            image: shoes1,
             link: "https://your-project-link.com"
         },
         {
             id: 3,
             title: "Portfolio Website",
             desc: "Personal portfolio website to showcase skills and work.",
-            image: "https://via.placeholder.com/300",
+            image: shoes1,
             link: "https://your-project-link.com"
         }
     ]
