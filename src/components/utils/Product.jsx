@@ -3,7 +3,7 @@ import shoes1 from "../shoes1.jpeg";
 
 const products = [{
     id: 1,
-    title: "SHOES1",
+    title: "Market Place Website",
     Price: "200",
     Discription: "This is my shoes",
     image: shoes1
