@@ -4,6 +4,7 @@ import  {BrowserRouter,Route, Routes} from 'react-router-dom'
 import Home from "../pages/Home"
 import About from "../pages/About"
 import Navbar from '../components/Navbar'
+import Mywork from '../pages/Mywork'
 
 function Navigation() {
     return (
@@ -12,6 +13,7 @@ function Navigation() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/About' element={<About/>}/>
+        <Route path='/Mywork' element={<Mywork/>}/>
       </Routes>
       </BrowserRouter> 
     )
