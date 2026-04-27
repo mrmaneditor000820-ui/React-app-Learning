@@ -79,47 +79,44 @@
 // // export default App
 
 
-// import React from 'react'
-// import Productcard from './components/Productcard'
-// import products from './components/utils/Product.jsx'
-
-
-// function App() {
-//   return (
-//     <div>
-
-//       {
-//         products.map((product) => {
-//           return (
-//             <div>
-//               <Productcard 
-//               key={product.id}
-//                title={product.title} 
-//                discription={product.Discription}
-//                 price={product.Price} 
-//                 image={product.image} />
-//             </div>
-//           )
-//         })
-//       }
-//     </div>
-//   )
-// }
-
-// export default App
-
 import React from 'react'
-import Navigation from './route/Navigation'
+import Productcard from './components/Productcard'
+import products from './components/utils/Product.jsx'
 
 function App() {
   return (
     <div>
-      <Navigation/>
+      {
+        products.map((product) => {
+          return (
+            <Productcard 
+              key={product.id}
+              title={product.title} 
+              discription={product.Discription}
+              link={product.link} 
+              image={product.image} 
+            />
+          )
+        })
+      }
     </div>
   )
 }
 
 export default App
+
+// import React from 'react'
+// import Navigation from './route/Navigation'
+
+// function App() {
+//   return (
+//     <div>
+//       <Navigation/>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Productcard({ title, price, discription, image }) {
+function Productcard({ title, link, discription, image }) {
 
     const styles = {
         card: {
@@ -9,40 +9,17 @@ function Productcard({ title, price, discription, image }) {
             borderRadius: "15px",
             boxShadow: "0 8px 20px rgba(0,0,0,0.1)",
             overflow: "hidden",
-            transition: "0.3s",
             cursor: "pointer"
         },
-
         image: {
             width: "100%",
             height: "180px",
             objectFit: "cover"
         },
-
         content: {
             padding: "15px",
             textAlign: "center"
         },
-
-        title: {
-            fontSize: "18px",
-            fontWeight: "bold",
-            marginBottom: "8px"
-        },
-
-        desc: {
-            fontSize: "14px",
-            color: "#777",
-            marginBottom: "10px"
-        },
-
-        price: {
-            fontSize: "18px",
-            color: "#28a745",
-            fontWeight: "bold",
-            marginBottom: "10px"
-        },
-
         button: {
             background: "#000",
             color: "#fff",
@@ -50,8 +27,7 @@ function Productcard({ title, price, discription, image }) {
             padding: "10px",
             width: "100%",
             borderRadius: "8px",
-            cursor: "pointer",
-            transition: "0.3s"
+            cursor: "pointer"
         }
     }
 
@@ -60,10 +36,18 @@ function Productcard({ title, price, discription, image }) {
             <img style={styles.image} src={image} alt={title} />
 
             <div style={styles.content}>
-                <h2 style={styles.title}>{title}</h2>
-                <p style={styles.desc}>{discription}</p>
-                <h3 style={styles.price}>${price}</h3>
-                <button style={styles.button}>Add to Cart</button>
+                <h2>{title}</h2>
+                <p>{discription}</p>
+
+                {link.startsWith("http") ? (
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        <button style={styles.button}>View Product</button>
+                    </a>
+                ) : (
+                    <a href={link}>
+                        <button style={styles.button}>View Product</button>
+                    </a>
+                )}
             </div>
         </div>
     )
