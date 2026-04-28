@@ -1,4 +1,5 @@
 import React from 'react';
+import About from '../pages/About'
 
 function Home() {
   return (
@@ -30,6 +31,8 @@ function Home() {
           <p>Clean aur modern UI design</p>
         </div>
       </section>
+
+      <About/>
 
     </div>
   );

@@ -37,11 +37,6 @@ function About() {
                 </div>
             </section>
 
-            {/* Button */}
-            <Link to={"/"} style={styles.button}>
-                ⬅ Back to Home
-            </Link>
-
         </div>
     )
 }
