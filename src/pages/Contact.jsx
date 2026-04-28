@@ -10,13 +10,13 @@ function Contact() {
         <div className="p-10 text-white flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
           <p className="text-gray-300 mb-6">
-            Have a project idea or want to work together? Fill the form and let's create something amazing 🚀
+            Have a project idea or want to work together? Fill the form and let's create something amazing 
           </p>
 
           <div className="space-y-4">
-            <p>📧 Email: your@email.com</p>
-            <p>📱 Phone: +92 300 0000000</p>
-            <p>📍 Location: Karachi, Pakistan</p>
+            <p> Email: your@email.com</p>
+            <p> Phone: +92 300 0000000</p>
+            <p> Location: Karachi, Pakistan</p>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ function Contact() {
               type="submit"
               className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-900 transition duration-300"
             >
-              Send Message 🚀
+              Send Message 
             </button>
 
           </form>
@@ -58,4 +58,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contact

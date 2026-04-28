@@ -8,7 +8,7 @@ function About() {
             {/* Header */}
             <section style={styles.header}>
                 <h1>About Us</h1>
-                <p>Learn more about what we do 🚀</p>
+                <p>Learn more about what we do </p>
             </section>
 
             {/* Content */}
@@ -32,7 +32,7 @@ function About() {
                 <div style={styles.card}>
                     <h2>Why Choose Us</h2>
                     <p>
-                        Fast performance ⚡, clean UI 🎨 aur modern technologies ke sath.
+                        Fast performance , clean UI  aur modern technologies ke sath.
                     </p>
                 </div>
             </section>

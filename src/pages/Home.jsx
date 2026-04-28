@@ -1,5 +1,8 @@
 import React from 'react';
 import About from '../pages/About'
+import Mywork from './Mywork';
+import Contact from '../pages/Contact'
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -7,7 +10,7 @@ function Home() {
       
       {/* Hero Section */}
       <section style={styles.hero}>
-        <h1 style={styles.heading}>Welcome to My Website 🚀</h1>
+        <h1 style={styles.heading}>Welcome to My Website </h1>
         <p style={styles.text}>
           Yahan tum apne projects, AI tools aur ideas showcase kar sakte ho.
         </p>
@@ -17,22 +20,26 @@ function Home() {
       {/* Features Section */}
       <section style={styles.features}>
         <div style={styles.card}>
-          <h3>Fast ⚡</h3>
+          <h3>Fast </h3>
           <p>React based fast performance website</p>
         </div>
 
         <div style={styles.card}>
-          <h3>Responsive 📱</h3>
+          <h3>Responsive </h3>
           <p>Mobile aur desktop dono pe perfect</p>
         </div>
 
         <div style={styles.card}>
-          <h3>Modern 🎨</h3>
+          <h3>Modern </h3>
           <p>Clean aur modern UI design</p>
         </div>
       </section>
-
       <About/>
+  
+
+      <Mywork/>
+
+      <Contact/>
 
     </div>
   );

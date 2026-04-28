@@ -1,5 +1,7 @@
 import React from 'react'
-import shoes1 from "../components/shoes1.jpeg";
+import Projects from "../components/1project.png";
+import Projects2 from "../components/2project.png";
+import Projects3 from "../components/3project.png";
 
 
 function Mywork() {
@@ -9,29 +11,29 @@ function Mywork() {
             id: 1,
             title: "AI Chat App",
             desc: "AI based chat application built with React & API integration.",
-            image: shoes1,
-            link: "https://your-project-link.com"
+            image: Projects,
+            link: "https://dainty-pony-d52426.netlify.app/"
         },
         {
             id: 2,
             title: "E-commerce Website",
             desc: "Modern online store with cart and payment UI.",
-            image: shoes1,
-            link: "https://your-project-link.com"
+            image: Projects2,
+            link: "https://rehman-e-commerce-web.netlify.app/"
         },
         {
             id: 3,
             title: "Portfolio Website",
             desc: "Personal portfolio website to showcase skills and work.",
-            image: shoes1,
-            link: "https://your-project-link.com"
+            image: Projects3,
+            link: "https://mymarketplacewebsite.netlify.app/"
         }
     ]
 
     return (
         <div style={styles.container}>
 
-            <h1 style={styles.heading}>My Work 🚀</h1>
+            <h1 style={styles.heading}>My Work </h1>
             <p style={styles.subHeading}>Here are some of my recent projects</p>
 
             <div style={styles.grid}>
@@ -83,15 +85,17 @@ const styles = {
         flexWrap: "wrap"
     },
     card: {
-        width: "250px",
-        background: "#f1f5f9",
+        width: "550px",
+        background: "#f9f9fc",
         borderRadius: "10px",
         padding: "15px",
-        boxShadow: "0px 4px 10px rgba(0,0,0,0.1)"
+        boxShadow: "0px 4px 10px rgba(242, 6, 6, 0.1)",
+        border :"2px solid black"
     },
     image: {
         width: "100%",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        border : "2px solid #3b08f3 "
     },
     button: {
         display: "inline-block",
