@@ -12,21 +12,21 @@ function Mywork() {
             title: "AI Chat App",
             desc: "AI based chat application built with React & API integration.",
             image: Projects,
-            link: "https://dainty-pony-d52426.netlify.app/"
+            link: "https://mymarketplacewebsite.netlify.app/"
         },
         {
             id: 2,
             title: "E-commerce Website",
             desc: "Modern online store with cart and payment UI.",
             image: Projects2,
-            link: "https://rehman-e-commerce-web.netlify.app/"
+            link: "https://dainty-pony-d52426.netlify.app/"
         },
         {
             id: 3,
             title: "Portfolio Website",
             desc: "Personal portfolio website to showcase skills and work.",
             image: Projects3,
-            link: "https://mymarketplacewebsite.netlify.app/"
+            link: "https://rehman-e-commerce-web.netlify.app/"
         }
     ]
 
@@ -51,6 +51,7 @@ function Mywork() {
 
                         <a 
                             href={project.link} 
+                            target='Blanke'
                             style={styles.button}
                         >
                             View Project

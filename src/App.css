@@ -5,10 +5,11 @@
   display: flex;
   align-items: center;
   padding: 0px 50px;
-  color: blue;
+  color: rgb(14, 14, 206);
   font-size: larger;
-  border-radius: 1000px;
-  margin-top: 5px;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .navlinks{
   display: flex;
