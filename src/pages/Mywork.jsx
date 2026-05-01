@@ -40,17 +40,17 @@ function Mywork() {
                 {projects.map((project) => (
                     <div key={project.id} style={styles.card}>
 
-                        <img 
-                            src={project.image} 
-                            alt={project.title} 
+                        <img
+                            src={project.image}
+                            alt={project.title}
                             style={styles.image}
                         />
 
                         <h2>{project.title}</h2>
                         <p>{project.desc}</p>
 
-                        <a 
-                            href={project.link} 
+                        <a
+                            href={project.link}
                             target='Blanke'
                             style={styles.button}
                         >
@@ -91,12 +91,12 @@ const styles = {
         borderRadius: "10px",
         padding: "15px",
         boxShadow: "0px 4px 10px rgba(242, 6, 6, 0.1)",
-        border :"2px solid black"
+        border: "2px solid black"
     },
     image: {
         width: "100%",
         borderRadius: "10px",
-        border : "2px solid #3b08f3 "
+        border: "2px solid #3b08f3 "
     },
     button: {
         display: "inline-block",
