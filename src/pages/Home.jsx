@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div style={styles.container}>
-      
+
       {/* Hero Section */}
       <section style={styles.hero}>
         <h1 style={styles.heading}>Welcome to My Website </h1>
@@ -34,13 +34,9 @@ function Home() {
           <p>Clean aur modern UI design</p>
         </div>
       </section>
-      <About/>
-  
-
-      <Mywork/>
-
-      <Contact/>
-
+      <About />
+      <Mywork />
+      <Contact />
     </div>
   );
 }
