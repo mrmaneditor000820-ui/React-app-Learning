@@ -12,6 +12,7 @@ function Navigation() {
       <BrowserRouter>
       <Navbar/>     
       <Routes>
+        <Route path='*' element={<h5>Not found</h5>}/>
         <Route path='/' element={<Home/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Mywork' element={<Mywork/>}/>
