@@ -40,7 +40,6 @@ function Home() {
     </div>
   );
 }
-
 const styles = {
   container: {
     fontFamily: "Arial",
