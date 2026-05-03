@@ -6,6 +6,7 @@ import About from "../pages/About"
 import Navbar from '../components/Navbar'
 import Mywork from '../pages/Mywork'
 import Contact from '../pages/Contact'
+import ProtectedRoute from './ProtectedRoute'
 
 function Navigation() {
   return (
