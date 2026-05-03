@@ -13,12 +13,12 @@ function Navigation() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route element={<ProtectedRoute />} />
+        <Route element={<ProtectedRoute />}>
         <Route path='/About' element={<About />} />
         <Route path='/Mywork' element={<Mywork />} />
         <Route path='/Contact' element={<Contact />} />
         <Route path='*' element={<h5>Not found</h5>} />
-      </React>
+      </Route>
     </Routes>
       </BrowserRouter > 
     )
