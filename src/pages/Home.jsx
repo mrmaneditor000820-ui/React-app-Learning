@@ -3,6 +3,7 @@ import About from '../pages/About'
 import Mywork from './Mywork';
 import Contact from '../pages/Contact'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ function Home() {
       <About />
       <Mywork />
       <Contact />
+      <Footer/>
     </div>
   );
 }
