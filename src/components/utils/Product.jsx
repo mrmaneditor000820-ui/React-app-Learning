@@ -8,22 +8,22 @@ import Projects3 from "../3project.png";
 const projects = [
         {
             id: 1,
-            title: "AI Chat App",
-            desc: "AI based chat application built with React & API integration.",
+            title: "Merket Place Website",
+            desc: "Mordern Market Place Website Create Your Card .",
             image: Projects,
             link: "https://mymarketplacewebsite.netlify.app/"
         },
         {
             id: 2,
-            title: "E-commerce Website",
+            title: "Rent Car Website",
             desc: "Modern online store with cart and payment UI.",
             image: Projects2,
             link: "https://dainty-pony-d52426.netlify.app/"
         },
         {
             id: 3,
-            title: "Portfolio Website",
-            desc: "Personal portfolio website to showcase skills and work.",
+            title: "E - Commerce Website",
+            desc: "Personal E - Commerce website to showcase skills and work.",
             image: Projects3,
             link: "https://rehman-e-commerce-web.netlify.app/"
         }

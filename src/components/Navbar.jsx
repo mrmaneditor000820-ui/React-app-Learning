@@ -1,28 +1,62 @@
 
-import '../App.css'
 
+
+
+import '../App.css'
 
 function Navbar() {
     return (
         <div className="main">
-            <h2>ABDUL REHMAN</h2>
-            <nav >
+
+            {/* LOGO */}
+            <h2 className="logo">ABDUL REHMAN</h2>
+
+            {/* NAV LINKS */}
+            <nav>
                 <ul className='navlinks'>
-                    <li><a href="/"><span id='kuchbhi'><i class="fa-solid fa-house"></i></span><br></br>Home</a></li>
-                    <li><a href="About"><span id='kuchbhi'><i class="fa-solid fa-circle-user"></i></span><br></br>About</a></li>
-                    <li><a href="Mywork"><span id='kuchbhi'><i class="fa-solid fa-briefcase"></i></span><br></br>My Work</a></li>
-                    <li><a href="Contact"><span id='kuchbhi'><i class="fa-jelly-fill fa-regular fa-address-card"></i></span><br></br>Contact</a></li>
+
+                    <li>
+                        <a href="/">
+                            <i className="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="About">
+                            <i className="fa-solid fa-circle-user"></i>
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Mywork">
+                            <i className="fa-solid fa-briefcase"></i>
+                            My Work
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Contact">
+                            <i className="fa-regular fa-address-card"></i>
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
-            <button className='signupbtn'><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign Up</a></button>
+
+            {/* BUTTON */}
+            <button className='signupbtn'>
+                <i className="fa-solid fa-arrow-right-to-bracket"></i>
+                Sign Up
+            </button>
+
         </div>
     )
 }
-export default Navbar
 
-
-
-
+export default Navbar;
 
 
 
