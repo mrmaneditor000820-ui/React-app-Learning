@@ -53,9 +53,9 @@ const Footer = () => {
 
                 {/* Logo */}
                 <div style={styles.section}>
-                    <h2 style={styles.logo}>AI With Rehman</h2>
+                    <h2 style={styles.logo}> ABDUL Rehman</h2>
                     <p style={styles.text}>
-                        Learn AI, coding, and tech with simple tutorials.
+                        Learn , coding
                     </p>
                 </div>
 
@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
 
             <div style={styles.bottom}>
-                <p>© 2026 AI With Rehman | All Rights Reserved</p>
+                <p>© 2026 ABDUL Rehman | All Rights Reserved</p>
             </div>
         </footer>
     );
