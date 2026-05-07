@@ -38,7 +38,6 @@ function Home() {
       <About />
       <Mywork />
       <Contact />
-      <Footer/>
     </div>
   );
 }

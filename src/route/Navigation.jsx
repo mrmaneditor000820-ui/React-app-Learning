@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import Mywork from '../pages/Mywork'
 import Contact from '../pages/Contact'
 import ProtectedRoute from './ProtectedRoute'
+import Footer from '../pages/Footer'
 
 function Navigation() {
   return (
@@ -20,6 +21,7 @@ function Navigation() {
         <Route path='*' element={<h5>Not found</h5>} />
       </Route>
     </Routes>
+        <Footer/>
       </BrowserRouter > 
     )
 }
