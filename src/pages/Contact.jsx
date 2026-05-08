@@ -38,7 +38,7 @@ function Contact() {
               <div className="text-2xl">📧</div>
               <div>
                 <h3 className="font-semibold text-sky-400">Email</h3>
-                <p className="text-gray-300">your@email.com</p>
+                <p className="text-gray-300">mrmaneditor000820@email.com</p>
               </div>
             </div>
 
@@ -46,7 +46,7 @@ function Contact() {
               <div className="text-2xl">📱</div>
               <div>
                 <h3 className="font-semibold text-sky-400">Phone</h3>
-                <p className="text-gray-300">+92 300 0000000</p>
+                <p className="text-gray-300">+92 3463419974</p>
               </div>
             </div>
 
