@@ -14,35 +14,52 @@ function Home() {
 
   return (
     <div style={styles.container}>
-      {/* Premium Cinematic Video Background */}
-      <div style={styles.videoContainer}>
-        <video 
-          ref={videoRef}
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          style={styles.videoBg}
-        >
-          {/* High-quality professional background videos - multiple sources for reliability */}
-          <source src="src\27669-365224683_medium.mp4" type="video/mp4" />
-          {/* <source src="https://assets.mixkit.co/video/preview/mixkit-futuristic-technology-background-3382-large.mp4" type="video/mp4" /> */}
-          {/* <source src="https://cdn.pixabay.com/video/2021/11/21/98700-650315652_tiny.mp4" type="video/mp4" /> */}
-        </video>
-        <div style={styles.darkOverlay}></div>
-        <div style={styles.animatedGradient}></div>
+      {/* PROFESSIONAL DARK PREMIUM BACKGROUND - NO VIDEO */}
+      <div style={styles.premiumDarkBg}>
+        {/* Animated Gradient Orbs */}
+        <div style={styles.glowOrb1}></div>
+        <div style={styles.glowOrb2}></div>
+        <div style={styles.glowOrb3}></div>
+        
+        {/* Grid Pattern */}
+        <div style={styles.gridPattern}></div>
+        
+        {/* Subtle Noise Texture */}
+        <div style={styles.noiseTexture}></div>
+        
+        {/* Dark Overlay Gradient */}
+        <div style={styles.darkGradientOverlay}></div>
       </div>
 
       {/* Animated Tech Lines */}
       <div style={styles.techLines}>
-        {[...Array(12)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <div 
             key={i} 
             style={{
               ...styles.techLine,
-              left: `${(i * 8.3)}%`,
-              animationDelay: `${i * 0.2}s`,
-              height: `${Math.random() * 200 + 100}px`,
+              left: `${(i * 6.6)}%`,
+              animationDelay: `${i * 0.15}s`,
+              height: `${Math.random() * 300 + 80}px`,
+              width: `${Math.random() * 2 + 1}px`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Floating Particles */}
+      <div style={styles.floatingParticles}>
+        {[...Array(30)].map((_, i) => (
+          <div 
+            key={i} 
+            style={{
+              ...styles.particle,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 10}s`,
+              animationDuration: `${Math.random() * 15 + 8}s`,
+              width: `${Math.random() * 3 + 1}px`,
+              height: `${Math.random() * 3 + 1}px`,
             }}
           />
         ))}
@@ -50,14 +67,14 @@ function Home() {
 
       {/* Floating Code Particles */}
       <div style={styles.codeParticles}>
-        {['&lt;/&gt;', '{ }', '() =>', 'const', '💻', '✨', '⚡', '🚀'].map((item, i) => (
+        {['</>', '{ }', '() =>', 'const', '💻', '✨', '⚡', '🚀', '→', '←', '↑', '↓'].map((item, i) => (
           <div 
             key={i} 
             style={{
               ...styles.codeParticle,
               left: `${Math.random() * 100}%`,
-              animationDelay: `${i * 1.5}s`,
-              animationDuration: `${Math.random() * 10 + 12}s`,
+              animationDelay: `${i * 1.2}s`,
+              animationDuration: `${Math.random() * 12 + 10}s`,
             }}
           >
             {item}
@@ -265,10 +282,11 @@ const styles = {
     fontFamily: "'Inter', 'Poppins', -apple-system, sans-serif",
     overflow: 'hidden',
     color: '#ffffff',
+    background: '#0a0a0a',
   },
 
-  // Video Background
-  videoContainer: {
+  // PROFESSIONAL DARK PREMIUM BACKGROUND
+  premiumDarkBg: {
     position: 'fixed',
     top: 0,
     left: 0,
@@ -276,36 +294,70 @@ const styles = {
     height: '100%',
     zIndex: 0,
     overflow: 'hidden',
+    background: 'radial-gradient(ellipse at 20% 30%, #1a1a2e, #0a0a0a)',
   },
-  videoBg: {
+  glowOrb1: {
     position: 'absolute',
-    top: '50%',
-    left: '50%',
-    minWidth: '100%',
-    minHeight: '100%',
-    width: 'auto',
-    height: 'auto',
-    transform: 'translateX(-50%) translateY(-50%)',
-    objectFit: 'cover',
+    top: '10%',
+    right: '-20%',
+    width: '80%',
+    height: '80%',
+    borderRadius: '50%',
+    background: 'radial-gradient(circle, rgba(56,189,248,0.15) 0%, transparent 70%)',
+    animation: 'floatGlow 20s ease-in-out infinite',
   },
-  darkOverlay: {
+  glowOrb2: {
+    position: 'absolute',
+    bottom: '-30%',
+    left: '-20%',
+    width: '70%',
+    height: '70%',
+    borderRadius: '50%',
+    background: 'radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)',
+    animation: 'floatGlow 25s ease-in-out infinite reverse',
+  },
+  glowOrb3: {
+    position: 'absolute',
+    top: '40%',
+    left: '30%',
+    width: '50%',
+    height: '50%',
+    borderRadius: '50%',
+    background: 'radial-gradient(circle, rgba(6,182,212,0.08) 0%, transparent 70%)',
+    animation: 'floatGlow 18s ease-in-out infinite',
+  },
+  gridPattern: {
     position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
     height: '100%',
-    background: 'linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.85) 100%)',
+    backgroundImage: `
+      linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px)
+    `,
+    backgroundSize: '50px 50px',
     zIndex: 1,
   },
-  animatedGradient: {
+  noiseTexture: {
     position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
     height: '100%',
-    background: 'radial-gradient(circle at 20% 50%, rgba(56,189,248,0.08) 0%, transparent 50%)',
+    backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E")`,
+    opacity: 0.3,
+    pointerEvents: 'none',
     zIndex: 2,
-    animation: 'pulseGlow 8s ease-in-out infinite',
+  },
+  darkGradientOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: 'linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%)',
+    zIndex: 3,
   },
 
   // Tech Lines Animation
@@ -315,16 +367,33 @@ const styles = {
     left: 0,
     width: '100%',
     height: '100%',
-    zIndex: 3,
+    zIndex: 4,
     pointerEvents: 'none',
     overflow: 'hidden',
   },
   techLine: {
     position: 'absolute',
     bottom: '-100px',
-    width: '1px',
-    background: 'linear-gradient(to top, transparent, rgba(56,189,248,0.3), transparent)',
-    animation: 'riseUp 6s linear infinite',
+    background: 'linear-gradient(to top, transparent, rgba(56,189,248,0.2), rgba(139,92,246,0.2), transparent)',
+    animation: 'riseUp 8s linear infinite',
+  },
+
+  // Floating Particles
+  floatingParticles: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: 4,
+    pointerEvents: 'none',
+  },
+  particle: {
+    position: 'absolute',
+    backgroundColor: '#38bdf8',
+    borderRadius: '50%',
+    opacity: 0.4,
+    animation: 'floatParticle 12s linear infinite',
   },
 
   // Code Particles
@@ -334,14 +403,14 @@ const styles = {
     left: 0,
     width: '100%',
     height: '100%',
-    zIndex: 3,
+    zIndex: 4,
     pointerEvents: 'none',
   },
   codeParticle: {
     position: 'absolute',
     top: '100%',
-    fontSize: '14px',
-    opacity: 0.3,
+    fontSize: '12px',
+    opacity: 0.2,
     color: '#38bdf8',
     fontFamily: 'monospace',
     fontWeight: 'bold',
@@ -487,7 +556,7 @@ const styles = {
   // About Section
   aboutSection: {
     padding: '100px 20px',
-    background: 'rgba(0,0,0,0.6)',
+    background: 'rgba(0,0,0,0.4)',
     backdropFilter: 'blur(15px)',
   },
   containerInner: {
@@ -727,23 +796,30 @@ styleSheet.textContent = `
     100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0; }
   }
   
-  @keyframes pulseGlow {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.6; }
+  @keyframes floatGlow {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+    50% { transform: translate(5%, 5%) scale(1.1); opacity: 0.5; }
   }
   
   @keyframes riseUp {
     0% { transform: translateY(100vh); opacity: 0; }
-    10% { opacity: 0.5; }
-    90% { opacity: 0.5; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.6; }
     100% { transform: translateY(-100px); opacity: 0; }
   }
   
   @keyframes floatUp {
     0% { transform: translateY(100vh); opacity: 0; }
-    10% { opacity: 0.4; }
-    90% { opacity: 0.4; }
+    10% { opacity: 0.3; }
+    90% { opacity: 0.3; }
     100% { transform: translateY(-100px); opacity: 0; }
+  }
+  
+  @keyframes floatParticle {
+    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+    10% { opacity: 0.5; }
+    90% { opacity: 0.5; }
+    100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
   }
   
   .primaryButton:hover {
