@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import About from '../pages/About';
 import Mywork from './Mywork';
 import Contact from '../pages/Contact';
+import image from '../assets/Developer_near_modern_202604061838.jpeg'
 
 function Home() {
   const videoRef = useRef(null);
@@ -206,8 +207,8 @@ function Home() {
               <div style={styles.profileCard}>
                 <div style={styles.imageWrapper}>
                   <div style={styles.profileImage}>
-                    <span style={styles.avatarEmoji}>👨‍💻</span>
-                  </div>
+  <img src={image} alt="profile" style={styles.avatarImage} />
+</div>
                   <div style={styles.pulseRing}></div>
                 </div>
                 
@@ -656,21 +657,27 @@ const styles = {
     justifyContent: 'center',
     marginBottom: '30px',
   },
-  profileImage: {
-    width: '200px',
-    height: '200px',
-    background: 'linear-gradient(135deg, #0ea5e9, #8b5cf6)',
-    borderRadius: '50%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative',
-    zIndex: 2,
-    boxShadow: '0 10px 40px rgba(14,165,233,0.3)',
-  },
-  avatarEmoji: {
-    fontSize: '80px',
-  },
+ profileImage: {
+  width: '200px',
+  height: '200px',
+  borderRadius: '50%',
+  overflow: 'hidden',
+  background: 'linear-gradient(135deg, #0ea5e9, #8b5cf6)',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  position: 'relative',
+  zIndex: 2,
+  boxShadow: '0 10px 40px rgba(14,165,233,0.3)',
+},
+avatarImage: {
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  borderRadius: '50%',
+  border: '3px solid rgba(56,189,248,0.4)',
+  boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+},
   pulseRing: {
     position: 'absolute',
     width: '220px',
