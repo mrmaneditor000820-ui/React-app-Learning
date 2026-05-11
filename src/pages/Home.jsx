@@ -655,6 +655,7 @@ const styles = {
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
+    
     marginBottom: '30px',
   },
  profileImage: {
