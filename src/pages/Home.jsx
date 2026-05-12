@@ -149,7 +149,7 @@ function Home() {
                   About Me
                 </div>
                 <h2 style={styles.sectionTitle}>
-                  I'm <span style={styles.highlight}>Alex Johnson</span>
+                  I'm <span style={styles.highlight}>ABDUL REHMAN</span>
                 </h2>
                 <p style={styles.aboutText}>
                   A passionate developer with over 5 years of experience crafting beautiful 
