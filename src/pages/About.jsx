@@ -311,6 +311,7 @@ const styles = {
         marginRight: 'auto',
     },
 
+    
     card: {
         position: 'relative',
         width: '340px',
