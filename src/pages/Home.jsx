@@ -138,7 +138,7 @@ function Home() {
           </div>
         </section>
 
-        
+
 
         {/* ABOUT SECTION */}
         <section style={styles.aboutSection}>
@@ -170,7 +170,7 @@ function Home() {
                     <span style={styles.detailIcon}>📧</span>
                     <div>
                       <span style={styles.detailLabel}>Email</span>
-                      <span style={styles.detailValue}>alex.johnson@example.com</span>
+                      <span style={styles.detailValue}>mrmaneditor000820@gmail.com</span>
                     </div>
                   </div>
                   <div style={styles.detailItem}>
