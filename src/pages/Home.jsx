@@ -186,7 +186,7 @@ function Home() {
 
                 {/* Social Links */}
                 <div style={styles.socialLinks}>
-                  <a href="#" style={styles.socialIcon}>💼 LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/abdul-rehman-763b11396/" style={styles.socialIcon}> 💼 LinkedIn</a>
                   <a href="#" style={styles.socialIcon}>🐙 GitHub</a>
                   <a href="#" style={styles.socialIcon}>📸 Instagram</a>
                 </div>
