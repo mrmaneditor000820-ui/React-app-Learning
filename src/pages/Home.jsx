@@ -177,7 +177,7 @@ function Home() {
                     <span style={styles.detailIcon}>📍</span>
                     <div>
                       <span style={styles.detailLabel}>Location</span>
-                      <span style={styles.detailValue}>San Francisco, CA</span>
+                      <span style={styles.detailValue}>KARACHI</span>
                     </div>
                   </div>
                   <div style={styles.detailItem}>
