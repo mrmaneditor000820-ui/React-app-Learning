@@ -180,25 +180,12 @@ function Home() {
                       <span style={styles.detailValue}>KARACHI</span>
                     </div>
                   </div>
-                  <div style={styles.detailItem}>
-                    <span style={styles.detailIcon}>💼</span>
-                    <div>
-                      <span style={styles.detailLabel}>Availability</span>
-                      <span style={styles.detailValue}>Open for Opportunities</span>
-                    </div>
-                  </div>
-                  <div style={styles.detailItem}>
-                    <span style={styles.detailIcon}>🎂</span>
-                    <div>
-                      <span style={styles.detailLabel}>Age</span>
-                      <span style={styles.detailValue}>27 Years</span>
-                    </div>
-                  </div>
+                  
+          
                 </div>
 
                 {/* Social Links */}
                 <div style={styles.socialLinks}>
-                  <a href="#" style={styles.socialIcon}>🐦 Twitter</a>
                   <a href="#" style={styles.socialIcon}>💼 LinkedIn</a>
                   <a href="#" style={styles.socialIcon}>🐙 GitHub</a>
                   <a href="#" style={styles.socialIcon}>📸 Instagram</a>
