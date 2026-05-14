@@ -138,6 +138,8 @@ function Home() {
           </div>
         </section>
 
+        
+
         {/* ABOUT SECTION */}
         <section style={styles.aboutSection}>
           <div style={styles.containerInner}>
