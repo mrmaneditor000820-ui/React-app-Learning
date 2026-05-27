@@ -4,6 +4,7 @@ import Mywork from './Mywork';
 import Contact from '../pages/Contact';
 import image from '../assets/Developer_near_modern_202604061838.jpeg'
 
+
 function Home() {
   const videoRef = useRef(null);
 
