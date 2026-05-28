@@ -2,6 +2,7 @@
 
 
 
+import { Link } from 'react-router-dom';
 import '../App.css'
 
 function Navbar() {
@@ -16,31 +17,31 @@ function Navbar() {
                 <ul className='navlinks'>
 
                     <li>
-                        <a href="/">
+                        <Link to="/">
                             <i className="fa-solid fa-house"></i>
                             Home
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="About">
+                        <Link to="/about">
                             <i className="fa-solid fa-circle-user"></i>
                             About
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="Mywork">
+                        <Link to="/mywork">
                             <i className="fa-solid fa-briefcase"></i>
                             My Work
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="Contact">
+                        <Link to="/contact">
                             <i className="fa-regular fa-address-card"></i>
                             Contact
-                        </a>
+                        </Link>
                     </li>
 
                 </ul>
